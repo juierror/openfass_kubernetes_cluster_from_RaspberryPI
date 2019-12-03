@@ -147,11 +147,13 @@ sudo kubeadm join 192.168.0.104:6443 --token <your-token> --discovery-token-ca-c
 3. Goto Directory Of Project
 
 4. Run Command
-  ```kubectl apply -f namespace.yml
+  ```
+     kubectl apply -f namespace.yml
      kubectl apply -f yaml_armhf/
   ```
 5.Check If Deploy Complete
-  ``` kubectl get deploy -n openfaas
+  ``` 
+      kubectl get deploy -n openfaas
       kubectl get pods --all-namespaces
   ```
 6.Goto localhost:31112 to SEE UI
