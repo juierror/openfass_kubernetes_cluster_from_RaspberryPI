@@ -66,6 +66,7 @@ newgrp docker
   ```
   2.Edit haproxy.cg
   ``` nano /etc/haproxy/haproxy.cfg ```
+  
   3.Add this configuration parameters to HAProxy config :
   ```global
     user haproxy
