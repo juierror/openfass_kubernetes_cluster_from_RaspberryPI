@@ -136,14 +136,19 @@ sudo kubeadm join 192.168.0.104:6443 --token <your-token> --discovery-token-ca-c
 > From now, Your cluster should be now ready to deploy applications!
 
 ## Deploy the application to Kubernetes cluster
+
 1.Install OpenFaas Cli
-  ```curl -sL https://cli.openfaas.com | sudo sh
   ```
+  curl -sL https://cli.openfaas.com | sudo sh
+  ```
+  
 2. Clone Project From [Github Project](https://github.com/openfaas/faas-netes)
+
 3. Goto Directory Of Project
+
 4. Run Command
   ```kubectl apply -f namespace.yml
-  kubectl apply -f yaml_armhf/
+     kubectl apply -f yaml_armhf/
   ```
 5.Check If Deploy Complete
   ``` kubectl get deploy -n openfaas
